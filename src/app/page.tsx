@@ -38,7 +38,7 @@ export default function Home() {
           I hold an MS in Computer Science from <a href="https://nyu.edu">NYU</a>, where I focused on deep learning and computer vision.
         </p>
         <p className="text-[var(--muted)]">
-          What drives me: Building systems that scale, optimizing performance, and tackling complex distributed systems challenges. Always interested in conversations about infrastructure, ML applications, or hard technical problems.
+          What drives me: Building systems that scale, optimizing performance, and tackling complex distributed systems challenges. Always interested in conversations about infrastructure, ML applications, or hard technical problems. Outside of work, you&apos;ll find me running around NYC, playing soccer, capturing moments through photography, enjoying live music, or exploring art museums and libraries.
         </p>
       </div>
 
