@@ -25,6 +25,10 @@ export default function Home() {
           Research
           <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-[var(--accent)] transition-all duration-300 group-hover:w-full"></span>
         </Link>
+        <Link href="/pitch" className="group relative text-[var(--accent)] no-underline">
+          Pitch
+          <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-[var(--accent)] transition-all duration-300 group-hover:w-full"></span>
+        </Link>
       </nav>
 
       <div className="mb-8 sm:mb-10 space-y-4 text-[15px] sm:text-base">
