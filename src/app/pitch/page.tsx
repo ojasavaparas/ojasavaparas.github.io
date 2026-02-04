@@ -1,10 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Pitch() {
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [showTip, setShowTip] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowTip(false);
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const toggleFullscreen = () => {
     setIsFullscreen(!isFullscreen);
@@ -35,7 +43,12 @@ export default function Pitch() {
         <Link href="/" className="text-[var(--muted)] no-underline hover:text-[var(--foreground)]">
           ← Home
         </Link>
-        <div className="flex gap-4">
+        <div className="flex items-center gap-4">
+          {showTip && (
+            <span className="text-sm text-[var(--muted)] animate-pulse">
+              Use arrow keys to navigate
+            </span>
+          )}
           <button
             onClick={toggleFullscreen}
             className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
@@ -55,7 +68,7 @@ export default function Pitch() {
 
       <h1 className="mb-6 text-xl sm:text-2xl font-bold">SDE Pitch</h1>
 
-      <div className="w-full aspect-[16/9]">
+      <div className="relative w-full aspect-[16/9]">
         <iframe
           src="https://docs.google.com/presentation/d/1VXbHO6oiKdUV87RS7WVlXsbz2FQD3CnhE-R-n3RKxuA/embed?start=false&loop=false&delayms=3000"
           className="w-full h-full rounded-lg border border-[var(--muted)]/20"
