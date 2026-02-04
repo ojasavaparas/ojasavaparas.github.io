@@ -44,11 +44,6 @@ export default function Pitch() {
           ← Home
         </Link>
         <div className="flex items-center gap-4">
-          {showTip && (
-            <span className="text-sm text-[var(--muted)] animate-pulse">
-              Use arrow keys to navigate
-            </span>
-          )}
           <button
             onClick={toggleFullscreen}
             className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
@@ -75,6 +70,11 @@ export default function Pitch() {
           allowFullScreen
           title="SDE Pitch"
         />
+        {showTip && (
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-[var(--foreground)] text-[var(--background)] px-4 py-2 rounded-lg text-sm shadow-lg animate-pulse">
+            Use arrow keys to navigate slides
+          </div>
+        )}
       </div>
     </main>
   );
