@@ -24,11 +24,13 @@ const projects = [
 export default function Projects() {
   return (
     <main className="mx-auto max-w-xl px-5 py-12 sm:py-16">
-      <p className="mb-6 sm:mb-8">
-        <Link href="/" className="text-[var(--muted)] no-underline hover:text-[var(--foreground)]">
-          ← Home
-        </Link>
-      </p>
+      <nav className="mb-6 sm:mb-8 flex flex-wrap gap-4 sm:gap-6 text-base font-medium">
+        <Link href="/" className="text-[var(--muted)] no-underline hover:text-[var(--foreground)]">Home</Link>
+        <Link href="/resume" className="text-[var(--accent)] no-underline hover:underline">Resume</Link>
+        <span className="text-[var(--foreground)]">Projects</span>
+        <Link href="/research" className="text-[var(--accent)] no-underline hover:underline">Research</Link>
+        <Link href="/pitch" className="text-[var(--accent)] no-underline hover:underline">Pitch</Link>
+      </nav>
 
       <h1 className="mb-2 text-xl sm:text-2xl font-bold">Projects</h1>
       <p className="mb-6 sm:mb-8 text-[var(--muted)] text-sm sm:text-base">Notable work from my time at Audible/Amazon.</p>
