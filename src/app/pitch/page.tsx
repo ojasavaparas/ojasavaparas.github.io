@@ -39,10 +39,16 @@ export default function Pitch() {
 
   return (
     <main className="mx-auto max-w-5xl px-5 py-12 sm:py-16">
+      <nav className="mb-6 flex flex-wrap gap-4 sm:gap-6 text-base font-medium">
+        <Link href="/" className="text-[var(--muted)] no-underline hover:text-[var(--foreground)]">Home</Link>
+        <Link href="/resume" className="text-[var(--accent)] no-underline hover:underline">Resume</Link>
+        <Link href="/projects" className="text-[var(--accent)] no-underline hover:underline">Projects</Link>
+        <Link href="/research" className="text-[var(--accent)] no-underline hover:underline">Research</Link>
+        <span className="text-[var(--foreground)]">Pitch</span>
+      </nav>
+
       <div className="mb-6 flex items-center justify-between">
-        <Link href="/" className="text-[var(--muted)] no-underline hover:text-[var(--foreground)]">
-          ← Home
-        </Link>
+        <h1 className="text-xl sm:text-2xl font-bold">SDE Pitch</h1>
         <div className="flex items-center gap-4">
           <button
             onClick={toggleFullscreen}
@@ -60,8 +66,6 @@ export default function Pitch() {
           </a>
         </div>
       </div>
-
-      <h1 className="mb-6 text-xl sm:text-2xl font-bold">SDE Pitch</h1>
 
       <div className="relative w-full aspect-[16/9]">
         <iframe
