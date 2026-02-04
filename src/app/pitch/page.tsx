@@ -63,16 +63,15 @@ export default function Pitch() {
 
       <h1 className="mb-6 text-xl sm:text-2xl font-bold">SDE Pitch</h1>
 
-      <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg border border-[var(--muted)]/20">
+      <div className="relative w-full aspect-[16/9]">
         <iframe
           src="https://docs.google.com/presentation/d/1VXbHO6oiKdUV87RS7WVlXsbz2FQD3CnhE-R-n3RKxuA/embed?start=false&loop=false&delayms=3000"
-          className="w-full h-full"
+          className="w-full h-full rounded-lg border border-[var(--muted)]/20"
           allowFullScreen
           title="SDE Pitch"
         />
-        <div className="absolute bottom-0 left-0 right-0 h-7 bg-[var(--background)]" />
         {showTip && (
-          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-[var(--foreground)] text-[var(--background)] px-4 py-2 rounded-lg text-sm shadow-lg animate-pulse">
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-[var(--foreground)] text-[var(--background)] px-4 py-2 rounded-lg text-sm shadow-lg animate-pulse">
             Use arrow keys to navigate slides
           </div>
         )}
