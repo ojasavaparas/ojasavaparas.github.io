@@ -29,6 +29,9 @@ export default function Resume() {
           title="Resume"
         />
       </div>
+      <p className="mt-3 text-sm text-[var(--muted)]">
+        Download PDF for clickable links
+      </p>
     </main>
   );
 }
