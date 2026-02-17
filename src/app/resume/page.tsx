@@ -6,8 +6,8 @@ export default function Resume() {
       <nav className="mb-6 flex flex-wrap gap-4 sm:gap-6 text-base font-medium">
         <Link href="/" className="text-[var(--muted)] no-underline hover:text-[var(--foreground)]">Home</Link>
         <span className="text-[var(--foreground)]">Resume</span>
-        <Link href="/projects" className="text-[var(--accent)] no-underline hover:underline">Projects</Link>
-        <Link href="/research" className="text-[var(--accent)] no-underline hover:underline">Research</Link>
+        <Link href="/projects" className="text-[var(--accent)] no-underline hover:underline">Experience</Link>
+        <Link href="/research" className="text-[var(--accent)] no-underline hover:underline">Projects</Link>
         <Link href="/pitch" className="text-[var(--accent)] no-underline hover:underline">Pitch</Link>
       </nav>
 

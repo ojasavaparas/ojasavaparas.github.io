@@ -18,11 +18,11 @@ export default function Home() {
           <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-[var(--accent)] transition-all duration-300 group-hover:w-full"></span>
         </Link>
         <Link href="/projects" className="group relative text-[var(--accent)] no-underline">
-          Projects
+          Experience
           <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-[var(--accent)] transition-all duration-300 group-hover:w-full"></span>
         </Link>
         <Link href="/research" className="group relative text-[var(--accent)] no-underline">
-          Research
+          Projects
           <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-[var(--accent)] transition-all duration-300 group-hover:w-full"></span>
         </Link>
         <Link href="/pitch" className="group relative text-[var(--accent)] no-underline">

@@ -2,6 +2,18 @@ import Link from "next/link";
 
 const research = [
   {
+    title: "Sentinel",
+    description: "A multi-agent AI system that automates production incident analysis. Uses a three-stage pipeline (Triage, Research, and Remediation agents) communicating through an A2A message bus to deliver root cause analysis and fixes within seconds.",
+    tags: ["Claude API", "FastAPI", "ChromaDB", "AWS CDK", "Streamlit"],
+    url: "https://github.com/ojasavaparas/Sentinel",
+  },
+  {
+    title: "ojasavaparas.github.io",
+    description: "Personal portfolio website built with Next.js, TypeScript, and Tailwind CSS. Deployed on GitHub Pages with a custom domain.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "GitHub Pages"],
+    url: "https://github.com/ojasavaparas/ojasavaparas.github.io",
+  },
+  {
     title: "Deep Bridge Bidding",
     description: "An open-source implementation of an automated bidding system for contract bridge using deep learning. Implements ENN and PNN models based on research by Rong et al.",
     tags: ["Deep Learning", "Neural Networks", "Python", "Game AI"],
@@ -33,13 +45,13 @@ export default function Research() {
       <nav className="mb-6 sm:mb-8 flex flex-wrap gap-4 sm:gap-6 text-base font-medium">
         <Link href="/" className="text-[var(--muted)] no-underline hover:text-[var(--foreground)]">Home</Link>
         <Link href="/resume" className="text-[var(--accent)] no-underline hover:underline">Resume</Link>
-        <Link href="/projects" className="text-[var(--accent)] no-underline hover:underline">Projects</Link>
-        <span className="text-[var(--foreground)]">Research</span>
+        <Link href="/projects" className="text-[var(--accent)] no-underline hover:underline">Experience</Link>
+        <span className="text-[var(--foreground)]">Projects</span>
         <Link href="/pitch" className="text-[var(--accent)] no-underline hover:underline">Pitch</Link>
       </nav>
 
-      <h1 className="mb-2 text-xl sm:text-2xl font-bold">Research</h1>
-      <p className="mb-6 sm:mb-8 text-[var(--muted)] text-sm sm:text-base">Machine learning and deep learning projects.</p>
+      <h1 className="mb-2 text-xl sm:text-2xl font-bold">Projects</h1>
+      <p className="mb-6 sm:mb-8 text-[var(--muted)] text-sm sm:text-base">From idea to code.</p>
 
       <ul className="space-y-5 sm:space-y-6">
         {research.map((project) => (

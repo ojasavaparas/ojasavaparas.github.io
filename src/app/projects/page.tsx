@@ -27,12 +27,12 @@ export default function Projects() {
       <nav className="mb-6 sm:mb-8 flex flex-wrap gap-4 sm:gap-6 text-base font-medium">
         <Link href="/" className="text-[var(--muted)] no-underline hover:text-[var(--foreground)]">Home</Link>
         <Link href="/resume" className="text-[var(--accent)] no-underline hover:underline">Resume</Link>
-        <span className="text-[var(--foreground)]">Projects</span>
-        <Link href="/research" className="text-[var(--accent)] no-underline hover:underline">Research</Link>
+        <span className="text-[var(--foreground)]">Experience</span>
+        <Link href="/research" className="text-[var(--accent)] no-underline hover:underline">Projects</Link>
         <Link href="/pitch" className="text-[var(--accent)] no-underline hover:underline">Pitch</Link>
       </nav>
 
-      <h1 className="mb-2 text-xl sm:text-2xl font-bold">Projects</h1>
+      <h1 className="mb-2 text-xl sm:text-2xl font-bold">Experience</h1>
       <p className="mb-6 sm:mb-8 text-[var(--muted)] text-sm sm:text-base">Notable work from my time at Audible/Amazon.</p>
 
       <ul className="space-y-5 sm:space-y-6">

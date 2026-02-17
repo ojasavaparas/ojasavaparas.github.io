@@ -42,8 +42,8 @@ export default function Pitch() {
       <nav className="mb-6 flex flex-wrap gap-4 sm:gap-6 text-base font-medium">
         <Link href="/" className="text-[var(--muted)] no-underline hover:text-[var(--foreground)]">Home</Link>
         <Link href="/resume" className="text-[var(--accent)] no-underline hover:underline">Resume</Link>
-        <Link href="/projects" className="text-[var(--accent)] no-underline hover:underline">Projects</Link>
-        <Link href="/research" className="text-[var(--accent)] no-underline hover:underline">Research</Link>
+        <Link href="/projects" className="text-[var(--accent)] no-underline hover:underline">Experience</Link>
+        <Link href="/research" className="text-[var(--accent)] no-underline hover:underline">Projects</Link>
         <span className="text-[var(--foreground)]">Pitch</span>
       </nav>
 
