@@ -7,7 +7,7 @@ export default function Home() {
       <header className="mb-6 flex items-start justify-between gap-4">
         <div>
           <h1 className="mb-1 text-xl sm:text-2xl font-bold">Ojasava Paras</h1>
-          <p className="text-[var(--muted)] text-sm sm:text-base">Software Engineer based in New York</p>
+          <p className="text-[var(--muted)] text-sm sm:text-base">Building scalable infrastructure and AI systems · NYC</p>
         </div>
         <ThemeToggle />
       </header>
